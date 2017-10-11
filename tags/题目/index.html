@@ -6,20 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://kayye.github.io">
-  <title>hexo install | Kayye</title>
+  <title>Tag: 题目 | Kayye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装环境·安装node.js进入官网(https://nodejs.org/en/)下载安装包，直接点击安装就可以了">
-<meta name="keywords" content="用法">
-<meta property="og:type" content="article">
-<meta property="og:title" content="hexo install">
-<meta property="og:url" content="http://kayye.github.io/2017/09/06/hexo安装/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Kayye">
+<meta property="og:url" content="http://kayye.github.io/tags/题目/index.html">
 <meta property="og:site_name" content="Kayye">
-<meta property="og:description" content="安装环境·安装node.js进入官网(https://nodejs.org/en/)下载安装包，直接点击安装就可以了">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-10-11T03:25:40.365Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo install">
-<meta name="twitter:description" content="安装环境·安装node.js进入官网(https://nodejs.org/en/)下载安装包，直接点击安装就可以了">
+<meta name="twitter:title" content="Kayye">
   
     <link rel="alternative" href="/atom.xml" title="Kayye" type="application/atom+xml">
   
@@ -179,171 +174,71 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hexo安装" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      hexo install
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/09/06/proJava/" class="archive-article-date">
+  	<time datetime="2017-09-06T07:29:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-06</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/09/06/proJava/">JavaPro</a>
     </h1>
   
 
-        
-        <a href="/2017/09/06/hexo安装/" class="archive-article-date">
-  	<time datetime="2017-09-06T14:29:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h1><p>·安装node.js<br>进入官网(<a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a>)<br>下载安装包，直接点击安装就可以了<br><a id="more"></a><br>·安装git （因为要给github上传文章）<br>git官网(<a href="http://git-scm.com" target="_blank" rel="external">http://git-scm.com</a>)<br>Windows: 直接下载和安装<br>Mac：进入git网站下载和安装，或者进入这里下载<br>Ubuntu：打开终端复制粘贴命令 sudo apt-get install git-core</p>
-<p>·安装、配置Hexo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
-<p>·创建hexo目录并初始化<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ mkdir hexo</div><div class="line">$ cd hexo</div><div class="line">$ hexo init</div></pre></td></tr></table></figure></p>
-<p>·然后就可以生成网站，启动服务了：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo clean   </div><div class="line">$ hexo generate</div><div class="line">$ hexo server</div></pre></td></tr></table></figure></p>
-<p>·hexo文件夹<br>先来看一下hexo文件夹下的内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">hexo/</div><div class="line">|- node_modules/  # hexo需要的模块，不需要上传GitHub</div><div class="line">|- themes/        # 主题文件，需要上传GitHub的dev分支</div><div class="line">|- sources/       # 博文md文件，需要上传GitHub的dev分支</div><div class="line">|- public/        # 生成的静态页面，由hexo deploy自动上传到gh-page分支</div><div class="line">|- package.json   # 记录hexo需要的包信息，不需要上传GitHub</div><div class="line">|- _config.yml    # 全局配置文件，需要上传GitHub的dev分支</div><div class="line">|- .gitignore     # hexo生成默认的.gitignore，它已经配置好了不需要上传的hexo文件</div></pre></td></tr></table></figure></p>
-<h1 id="配置自己的-config-yml"><a href="#配置自己的-config-yml" class="headerlink" title="配置自己的_config.yml"></a>配置自己的_config.yml</h1><p>翻到最下面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/&lt;自己的github账号&gt;/blog.git</div><div class="line">  branch: gh-pages</div></pre></td></tr></table></figure></p>
-<h1 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h1>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">题目</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/hexo//" class="article-tag-list-link color5">hexo</a>
+        			<a href="/categories/Java//" class="article-tag-list-link color5">Java</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://kayye.github.io/2017/09/06/hexo安装/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2017/09/12/github/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          github
-        
-      </div>
-    </a>
   
   
-    <a href="/2017/09/06/AboutJava/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">AboutJava</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -366,9 +261,9 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
