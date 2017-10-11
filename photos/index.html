@@ -8,14 +8,17 @@
   <link rel="dns-prefetch" href="http://kayye.github.io">
   <title>相册 | Kayye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Photos 	待续   	图片正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($scrip">
+<meta property="og:type" content="website">
 <meta property="og:title" content="相册">
 <meta property="og:url" content="http://kayye.github.io/photos/index.html">
 <meta property="og:site_name" content="Kayye">
+<meta property="og:description" content="Photos 	待续   	图片正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($scrip">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-10-09T10:23:53.496Z">
+<meta property="og:updated_time" content="2017-10-11T01:24:30.513Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="相册">
+<meta name="twitter:description" content="Photos 	待续   	图片正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($scrip">
   
     <link rel="alternative" href="/atom.xml" title="Kayye" type="application/atom+xml">
   
@@ -175,7 +178,7 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-undefined" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-photos" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -191,10 +194,27 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><link type="text/css" href="/fancybox/jquery.fancybox.css" rel="stylesheet"></p>
-<div class="instagram"><section class="archives album"><ul class="img-box-ul"></ul></section></div>
+        <link rel="stylesheet" href="./ins.css">
+<div class="photos-btn-wrap">
+	<a class="photos-btn active" href="javascript:void(0)" target="_blank" rel="external">Photos</a>
+	<a class="photos-btn" href="#">待续</a>
+</div>
+<div class="instagram itemscope">
+	<a href="https://www.instagram.com/kayyeq/" target="_blank" class="open-ins">图片正在加载中…</a>
+</div>
+<script>
+  (function() {
+    var loadScript = function(path) {
+      var $script = document.createElement('script')
+      document.getElementsByTagName('body')[0].appendChild($script)
+      $script.setAttribute('src', path)
+    }
+    setTimeout(function() {
+      loadScript('./ins.js')
+    }, 0)
+  })()
+</script>
 
-<script src="/js/photo.js"></script>
       
 
       
@@ -282,16 +302,6 @@ var _hmt = _hmt || [];
 </aside>
 
 
-
-  
-  
-  
-
-  
-
-  
-
-  
 
 
           </div>
