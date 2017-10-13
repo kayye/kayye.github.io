@@ -198,14 +198,10 @@ var _hmt = _hmt || [];
       
         <p>看了网上的那么多种方法，感觉还是这种方法的相册框架比较好看，而且json    还有时间显示，虽然在过程中有很多问题需要去调试，但还是在不断调试中实现了。<br>个人认为思路的确很重要的，有思路才能不断地去解决问题嘛，<br>1.首先要在主题那创建个photo目录<br>2.那图片存放到一个地方（例如github）用来做图片源</p>
 <h2 id="3-页面中的相册格式，有小图片，愿大图片之分"><a href="#3-页面中的相册格式，有小图片，愿大图片之分" class="headerlink" title="3.页面中的相册格式，有小图片，愿大图片之分"></a>3.页面中的相册格式，有小图片，愿大图片之分</h2><h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>.进入到你的博客目录下git bash执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page &quot;photos&quot;</div></pre></td></tr></table></figure></p>
-<p><img src="/source/assets/blogImg/hexoyilia添加相册/目录.png" alt=""></p>
-<p>.在博客的source文件夹下建立一个photos文件夹<br>.将样式文件放到photos文件夹下<a href="https://github.com/kayye/BlogBackup" target="_blank" rel="external">github</a>里面有样式文件<br><img src="/source/assets/blogImg/hexoyilia添加相册/样式文件.png" alt=""><br>.修改ins.js里面的放图片地址<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var render = function render(res) &#123;</div><div class="line">     var ulTmpl = &quot;&quot;;</div><div class="line">     for (var j = 0, len2 = res.list.length; j &lt; len2; j++) &#123;</div><div class="line">       var data = res.list[j].arr;</div><div class="line">       var liTmpl = &quot;&quot;;</div><div class="line">       for (var i = 0, len = data.link.length; i &lt; len; i++) &#123;</div><div class="line">         var minSrc = &apos;https://raw.githubusercontent.com/kayye/BlogBackup/master/min_photos/&apos; + data.link[i];</div><div class="line">         var src = &apos;https://raw.githubusercontent.com/kayye/BlogBackup/master/photos/&apos; + data.link[i];</div><div class="line">         var type = data.type[i];</div><div class="line">         var target = src + (type === &apos;video&apos; ? &apos;.mp4&apos; : &apos;.jpg&apos;);</div><div class="line">         src += &apos;&apos;;</div></pre></td></tr></table></figure></p>
-<p>minSrc和src地址，分别是你放小图片，大图片的创库</p>
-<p>.图形的处理python脚本<br>还需要安装python工具<a href="https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001374738150500472fd5785c194ebea336061163a8a974000" target="_blank" rel="external">教程</a><br>blog根目录要有这几个脚本文件<br><img src="/source/assets/blogImg/hexoyilia添加相册/根目录" alt=""><br>使用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python too.py</div></pre></td></tr></table></figure></p>
-<p>生成大图片小图片，并且自动上存到github上<br>若出现no module named PIL错误<br>出现这错误的原因是: PIL 模块找不到,PIL 模块已经过时了.<br>需要pip install pillow</p>
-<p>.图片的格式要求<br><img src="/source/assets/blogImg/hexoyilia添加相册/图片要求" alt=""><br>最前面是日期，然后用<em>进行分隔<br>后面是图片的描述信息，注意不要包含</em>和.符号</p>
-<p>.最后就是<br>进入到你博客目录, 执行 python tool.py(处理图片,上传图片,生成 json 文件)<br>hexo clean (清理之前的 HTML 等)<br>hexo g (生成 HTML 文件)<br>hexo s (看看效果如何)<br>最后部署到你的博客上.</p>
-
+<p><img src="/assets/blogImg/hexoyilia添加相册/目录.png" alt=""><br>
+        
+          <a class="article-more-a" href="/2017/10/11/hexoYilia相册/#more">more >></a>
+        
       
 
       
@@ -470,7 +466,8 @@ git push origin &lt;新分支名&gt;
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><p><img src="/assets/blogImg/AboutJava/keyword.jpg" alt=""></p>
+        <h1 id="·关键字"><a href="#·关键字" class="headerlink" title="·关键字"></a>·关键字</h1><p><img src="/assets/blogImg/AboutJava/keyword.jpg" alt=""></p>
+<p>·循环过程<br>
         
           <a class="article-more-a" href="/2017/09/06/AboutJava/#more">more >></a>
         
