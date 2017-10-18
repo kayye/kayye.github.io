@@ -8,21 +8,21 @@
   <link rel="dns-prefetch" href="http://kayye.github.io">
   <title>AboutJava | Kayye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="关键字  ·循环过程">
+  <meta name="description" content="关键字  switch语句 主体1234567891011switch(表达式)&amp;#123;  case 常量值 1：        代码块1;        break;  case 常量值2:        代码块2;        break;  ...  default:        当以上常量值均不是时，执行本代码（可有可无）&amp;#125;">
 <meta name="keywords" content="知识点">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AboutJava">
 <meta property="og:url" content="http://kayye.github.io/2017/09/06/AboutJava/index.html">
 <meta property="og:site_name" content="Kayye">
-<meta property="og:description" content="关键字  ·循环过程">
+<meta property="og:description" content="关键字  switch语句 主体1234567891011switch(表达式)&amp;#123;  case 常量值 1：        代码块1;        break;  case 常量值2:        代码块2;        break;  ...  default:        当以上常量值均不是时，执行本代码（可有可无）&amp;#125;">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://kayye.github.io/assets/blogImg/AboutJava/keyword.jpg">
 <meta property="og:image" content="http://kayye.github.io/assets/blogImg/AboutJava/循环.jpg">
 <meta property="og:image" content="http://kayye.github.io/assets/blogImg/AboutJava/冒泡排序过程.png">
-<meta property="og:updated_time" content="2017-10-18T03:22:27.941Z">
+<meta property="og:updated_time" content="2017-10-18T03:25:21.135Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AboutJava">
-<meta name="twitter:description" content="关键字  ·循环过程">
+<meta name="twitter:description" content="关键字  switch语句 主体1234567891011switch(表达式)&amp;#123;  case 常量值 1：        代码块1;        break;  case 常量值2:        代码块2;        break;  ...  default:        当以上常量值均不是时，执行本代码（可有可无）&amp;#125;">
 <meta name="twitter:image" content="http://kayye.github.io/assets/blogImg/AboutJava/keyword.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Kayye" type="application/atom+xml">
@@ -206,17 +206,18 @@ var _hmt = _hmt || [];
         <ul>
 <li>关键字<br><img src="/assets/blogImg/AboutJava/keyword.jpg" alt=""></li>
 </ul>
-<p>·循环过程<br><a id="more"></a><br><img src="/assets/blogImg/AboutJava/循环.jpg" alt=""></p>
 <h2 id="switch语句"><a href="#switch语句" class="headerlink" title="switch语句"></a>switch语句</h2><ul>
 <li>主体<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">switch(表达式)&#123;</div><div class="line">  case 常量值 1：</div><div class="line">        代码块1;</div><div class="line">        break;</div><div class="line">  case 常量值2:</div><div class="line">        代码块2;</div><div class="line">        break;</div><div class="line">  ...</div><div class="line">  default:</div><div class="line">        当以上常量值均不是时，执行本代码（可有可无）</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
+<a id="more"></a>
 <p>例子<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">Scanner scanner =new Scanner(System.in);</div><div class="line">        System.out.println(&quot;输入一个五分制的数&quot;);</div><div class="line">        int score = scanner.nextInt();</div><div class="line">        switch(score)&#123;</div><div class="line">            case 5:</div><div class="line">                System.out.println(&quot;优秀&quot;);</div><div class="line">                break;</div><div class="line">            case 4:</div><div class="line">                System.out.println(&quot;良好&quot;);</div><div class="line">                break;</div><div class="line">            case 3:</div><div class="line">                System.out.println(&quot;及格&quot;);</div><div class="line">                break;</div><div class="line">            case 2: case1:</div><div class="line">                System.out.println(&quot;不及格&quot;);</div><div class="line">                break;</div><div class="line">            default:</div><div class="line">                System.out.println(&quot;输入的分数不是五分制&quot;);</div><div class="line">        &#125;</div></pre></td></tr></table></figure></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">Scanner scanner =new Scanner(System.in);</div><div class="line">       System.out.println(&quot;输入分数的等级&quot;);</div><div class="line">       char grade = scanner.next().charAt(0);</div><div class="line">       switch(grade)&#123;</div><div class="line">           case &apos;优&apos;:</div><div class="line">               System.out.println(&quot;5&quot;);</div><div class="line">               break;</div><div class="line">           case &apos;良&apos;:</div><div class="line">               System.out.println(&quot;4&quot;);</div><div class="line">               break;</div><div class="line">           case &apos;中&apos;:</div><div class="line">               System.out.println(&quot;3&quot;);</div><div class="line">               break;</div><div class="line">           case &apos;差&apos;:</div><div class="line">               System.out.println(&quot;2&quot;);</div><div class="line">               break;</div><div class="line">           default:</div><div class="line">               System.out.println(&quot;输入的不是分数等级&quot;);</div><div class="line">       &#125;</div></pre></td></tr></table></figure>
 <h2 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h2><ul>
 <li>while循环<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">while(循环继续的条件表达式)&#123;</div><div class="line">      循环体或称循环类容</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
+<p><img src="/assets/blogImg/AboutJava/循环.jpg" alt=""></p>
 <h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ul>
 <li>数组初始化分为两种<br>1.静态初始化 //在数组创建之初直接指定其内容<br>2.动态初始化 //所有内容不会具体指定，都是默认值</li>
 </ul>
@@ -330,18 +331,18 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2017/09/06/hexo安装/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/09/06/proJava/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          hexo install
+          JavaPro
         
       </div>
     </a>
   
   
-    <a href="/2017/09/06/proJava/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JavaPro</div>
+    <a href="/2017/01/07/sublimeText/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">sublimeText</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -479,11 +480,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">命令</a>
+                <a href="javascript:void(0)" class="js-tag color3">测试</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">测试</a>
+                <a href="javascript:void(0)" class="js-tag color3">命令</a>
               </li>
             
             <div class="clearfix"></div>
