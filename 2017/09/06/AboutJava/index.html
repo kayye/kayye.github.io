@@ -21,7 +21,7 @@
 <meta property="og:image" content="http://kayye.github.io/assets/blogImg/AboutJava/冒泡排序过程.png">
 <meta property="og:image" content="http://kayye.github.io/assets/blogImg/AboutJava/方法的模型.png">
 <meta property="og:image" content="http://kayye.github.io/assets/blogImg/AboutJava/内存的划分.png">
-<meta property="og:updated_time" content="2017-11-02T01:23:32.826Z">
+<meta property="og:updated_time" content="2017-11-09T01:17:32.588Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AboutJava">
 <meta name="twitter:description" content="关键字  switch语句 主体1234567891011switch(表达式)&amp;#123;  case 常量值 1：        代码块1;        break;  case 常量值2:        代码块2;        break;  ...  default:        当以上常量值均不是时，执行本代码（可有可无）&amp;#125;">
@@ -239,8 +239,8 @@ var _hmt = _hmt || [];
 </ul>
 <p>静态初始化声明一个数组<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">int arrayDemo[][] =&#123;&#123;1,2&#125;,&#123;5,6&#125;,&#123;3,4&#125;&#125;;</div><div class="line">int[][] arrayDame = &#123;&#123;1,2&#125;,&#123;5,6&#125;,&#123;3,4,5&#125;&#125;;</div></pre></td></tr></table></figure></p>
 <p>打印二维数组<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">int arrayDemo [][] ;</div><div class="line">       arrayDemo = new int[10][10];</div><div class="line">        for (int i=0;i&lt;arrayDemo.length;i++)&#123;</div><div class="line">            for (int j=0;j&lt;arrayDemo[i].length;j++)&#123;</div><div class="line">                System.out.print(arrayDemo[i][j]);</div><div class="line">            &#125;</div><div class="line">            System.out.println();</div><div class="line">        &#125;</div></pre></td></tr></table></figure></p>
-<h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><ul>
-<li><p>方法<br><br><br>一半情况下方法的语法问<br></p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><ul>
+<li><p>方法<br>一半情况下方法的语法问<br></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"> modifier returnValueType methodName(list of parameters) &#123;</div><div class="line">  // Method body;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p><img src="/assets/blogImg/AboutJava/方法的模型.png" alt=""><br><br></p>
 <ul>
@@ -254,16 +254,36 @@ var _hmt = _hmt || [];
 </li>
 <li><p>方法體: 方法體包含定義哪些方法語句的集合.</p>
 <blockquote>
-<p>方法的返回值类型，void类型是不需要返回值的，全部的类型都需要返回值<br>&lt;</p>
+<p>方法的返回值类型，void类型是不需要返回值的，全部的类型都需要返回值<br><br></p>
+<ul>
+<li>方法的调用<br>创建一个方法，是做什么的定义，若要使用方法，必须调用它。有两种方法来调用一个方法，该选择是基于方法是否返回一个值或木有。</li>
+</ul>
 </blockquote>
 </li>
 </ul>
+<ul>
+<li>该方法有返回值的，调用该方法通常被视为一个值<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">int larger = max(30, 40);</div></pre></td></tr></table></figure>
 </li>
-<li><p>方法的重载<br><br><br>定义：方法名称相同，但是参数的类型和个数不同，通过传递参数的个数和类型不同来完成不同的功能。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">public static void tell(int i,int o)&#123;</div><div class="line">        System.out.println(i+o);</div><div class="line">    &#125;</div><div class="line">    public static void tell(int i,int o,int j)&#123;</div><div class="line">        System.out.println(i+o+j);</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+</ul>
 </li>
-<li><p>类的定义 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">class&#123;</div><div class="line">    属性</div><div class="line">    方法</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</ul>
+<pre><code>例子：
+</code></pre>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">public class text &#123;</div><div class="line">  public static void main(String args[]) &#123;</div><div class="line">      int i = 5;</div><div class="line">      int j = 7;</div><div class="line">      int k = max(i,j);</div><div class="line">      System.out.println(&quot;The maximum between &quot; + i +</div><div class="line">                  &quot; and &quot; + j + &quot; is &quot; + k);</div><div class="line">  &#125;</div><div class="line">public static int max(int i ,int j) &#123;</div><div class="line">    int result = 0;</div><div class="line">    if (i &lt; j)</div><div class="line">        result = j;</div><div class="line"></div><div class="line">    if (i &gt; j)</div><div class="line">        result = i;</div><div class="line"></div><div class="line">    return result;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<pre><code>- 该方法返回void，则调用该方法是一个语句
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">System.out.println(&quot;Welcome to Java!&quot;);</div></pre></td></tr></table></figure>
+
+
+例子
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"> public static void main(String[] args) &#123;</div><div class="line">   printGrade(78.5);</div><div class="line">&#125;</div><div class="line"></div><div class="line">public static void printGrade(double score) &#123;</div><div class="line">   if (score &gt;= 90.0) &#123;</div><div class="line">      System.out.println(&apos;A&apos;);</div><div class="line">   &#125;</div><div class="line">   else if (score &gt;= 80.0) &#123;</div><div class="line">      System.out.println(&apos;B&apos;);</div><div class="line">   &#125;</div><div class="line">   else if (score &gt;= 70.0) &#123;</div><div class="line">      System.out.println(&apos;C&apos;);</div><div class="line">   &#125;</div><div class="line">   else if (score &gt;= 60.0) &#123;</div><div class="line">      System.out.println(&apos;D&apos;);</div><div class="line">   &#125;</div><div class="line">   else &#123;</div><div class="line">      System.out.println(&apos;F&apos;);</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>在這裡，printGrade方法是一個void方法。它不返回任何值。調用一個void方法必須是一個語句。因此，它被調用在第3行中的main方法的聲明。此語句像分號結尾的Java語句。</p>
+</blockquote>
+<ul>
+<li>方法的重载<br>定义：方法名称相同，但是参数的类型和个数不同，通过传递参数的个数和类型不同来完成不同的功能。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">public static void tell(int i,int o)&#123;</div><div class="line">        System.out.println(i+o);</div><div class="line">    &#125;</div><div class="line">    public static void tell(int i,int o,int j)&#123;</div><div class="line">        System.out.println(i+o+j);</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h2><ul>
+<li>类的定义 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">class&#123;</div><div class="line">    属性</div><div class="line">    方法</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>&gt;<br>声明一个类一定要有关键字class，类名的首字母要大写<br>&lt;</p>
@@ -272,7 +292,36 @@ var _hmt = _hmt || [];
 </ul>
 <p>内存的划分：<br><img src="/assets/blogImg/AboutJava/内存的划分.png" alt=""></p>
 <p>用法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">//创建一个类</div><div class="line">class Person&#123;</div><div class="line">    String name;</div><div class="line">    int age;</div><div class="line">    public void tell()&#123;</div><div class="line">        System.out.println(&quot;姓名&quot;+name+&quot; &quot;+&quot;年龄&quot;+age);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">public class text &#123;</div><div class="line">    public static void main(String args[]) &#123;</div><div class="line">        //创建对象</div><div class="line">        //赋值</div><div class="line">        //对象.属性</div><div class="line">        //对象.方法</div><div class="line">        Person per = null;   //声明</div><div class="line">        per =new Person;     //实例化操作</div><div class="line">        Person per =new Person();//声明并实例化</div><div class="line">        per.age = 30;</div><div class="line">        per.name = &quot;张三&quot;;</div><div class="line">        per.tell();</div></pre></td></tr></table></figure></p>
-<p><del>删除线</del></p>
+<ul>
+<li><p>对象</p>
+<ul>
+<li>创建对象；<br>基本上一个对象是从一个类创建的。在java中，关键字new用于创建心的对象<br>从类创建对象时有三个步骤：<ul>
+<li>声明：变量声明，一个变量名的对象类型</li>
+<li>实例：“new”关键字用来创建对象</li>
+<li>初始化：关键字“new”后跟调用一个构造函数，用这个调用初始化对象</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>異常處理</p>
+<ul>
+<li><p>捕获异常<br>一种捕获的方法是使用try/catch关键字的组合异常。try/cath块放在围绕之中，可能产生异常的代码。try/catch块中的代码被称为受保护的代码，以及语法使用try/catch语句如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">    try</div><div class="line">&#123;</div><div class="line">   //Protected code</div><div class="line">&#125;catch(ExceptionName e1)</div><div class="line">&#123;</div><div class="line">   //Catch block</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>catch语句涉及声明异常的正在视图捕捉类型。吐过受保护的代码发生异常，catch块后面的试一下检查。如果发生异常的类型列在catch块，异常被传递到catch块多作为一个参数被传递到方法参数。</p>
+<ul>
+<li>例子<br>下面一个数组并有两个元素声明。然后代码视图访问它抛出一个异常数组的第三个元素。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">   // File Name : ExcepTest.java</div><div class="line">import java.io.*;</div><div class="line">public class ExcepTest&#123;</div><div class="line"></div><div class="line">   public static void main(String args[])&#123;</div><div class="line">      try&#123;</div><div class="line">         int a[] = new int[2];</div><div class="line">         System.out.println(&quot;Access element three :&quot; + a[3]);</div><div class="line">      &#125;catch(ArrayIndexOutOfBoundsException e)&#123;</div><div class="line">         System.out.println(&quot;Exception thrown  :&quot; + e);</div><div class="line">      &#125;</div><div class="line">      System.out.println(&quot;Out of the block&quot;);</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>- 多个catch快
+一个try块后面可以跟多个catch快。多个catch代码语法如下所示：
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">    try</div><div class="line">&#123;</div><div class="line">   //Protected code</div><div class="line">&#125;catch(ExceptionType1 e1)</div><div class="line">&#123;</div><div class="line">   //Catch block</div><div class="line">&#125;catch(ExceptionType2 e2)</div><div class="line">&#123;</div><div class="line">   //Catch block</div><div class="line">&#125;catch(ExceptionType3 e3)</div><div class="line">&#123;</div><div class="line">   //Catch block</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+前面的语句演示3个catch块，但可以有任意数量的其中的一个try后。如果受保护的代码发生异常，该异常被抛出到列表中的第一个catch块。如果抛出的异常的数据类型相匹配ExceptionType1，他就会被捕获不那里，如果不是，则该异常传递到第二catch语句，这中情况持续下去，知道异常要么被捕获或下落通过全部捕获，在这种情况下，目前的方法停止执行并抛出异常下落到以前的方法调用堆栈
+</code></pre><p><del>删除线</del><br><a href="http://tw.gitbook.net/java" target="_blank" rel="external">引用网址</a></p>
 
       
 
@@ -500,19 +549,19 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">知识点</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">日记</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">测试</a>
+                <a href="javascript:void(0)" class="js-tag color4">知识点</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">测试</a>
               </li>
              
               <li class="article-tag-list-item">
