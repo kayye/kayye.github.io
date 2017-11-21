@@ -21,7 +21,7 @@
 <meta property="og:image" content="http://kayye.github.io/assets/blogImg/AboutJava/冒泡排序过程.png">
 <meta property="og:image" content="http://kayye.github.io/assets/blogImg/AboutJava/方法的模型.png">
 <meta property="og:image" content="http://kayye.github.io/assets/blogImg/AboutJava/内存的划分.png">
-<meta property="og:updated_time" content="2017-11-21T06:25:00.164Z">
+<meta property="og:updated_time" content="2017-11-21T06:30:55.192Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AboutJava">
 <meta name="twitter:description" content="关键字  switch语句 主体1234567891011switch(表达式)&amp;#123;  case 常量值 1：        代码块1;        break;  case 常量值2:        代码块2;        break;  ...  default:        当以上常量值均不是时，执行本代码（可有可无）&amp;#125;">
@@ -318,15 +318,13 @@ var _hmt = _hmt || [];
 </ul>
 <pre><code>- 多个catch快
 一个try块后面可以跟多个catch快。多个catch代码语法如下所示：
+
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">    try</div><div class="line">&#123;</div><div class="line">   //Protected code</div><div class="line">&#125;catch(ExceptionType1 e1)</div><div class="line">&#123;</div><div class="line">   //Catch block</div><div class="line">&#125;catch(ExceptionType2 e2)</div><div class="line">&#123;</div><div class="line">   //Catch block</div><div class="line">&#125;catch(ExceptionType3 e3)</div><div class="line">&#123;</div><div class="line">   //Catch block</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
 前面的语句演示3个catch块，但可以有任意数量的其中的一个try后。如果受保护的代码发生异常，该异常被抛出到列表中的第一个catch块。如果抛出的异常的数据类型相匹配ExceptionType1，他就会被捕获不那里，如果不是，则该异常传递到第二catch语句，这中情况持续下去，知道异常要么被捕获或下落通过全部捕获，在这种情况下，目前的方法停止执行并抛出异常下落到以前的方法调用堆栈
-</code></pre><ul>
-<li><p>继承</p>
-<ul>
-<li>IS-A关系<br>IS-A（是一个）是一种表达：这个对象是一个类型的对象<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">public class Animal&#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line">public class Mammal extends Animal&#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line">public class Reptile extends Animal&#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line">public class Dog extends Mammal&#123;</div><div class="line">&#125;    </div><div class="line">public class Animal&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
+</code></pre><h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><ul>
+<li><p>IS-A关系<br>IS-A（是一个）是一种表达：这个对象是一个类型的对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">public class Animal&#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line">public class Mammal extends Animal&#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line">public class Reptile extends Animal&#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line">public class Dog extends Mammal&#123;</div><div class="line">&#125;    </div><div class="line">public class Animal&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>根据上面的语法，满足一下条件</p>
 <ul>
 <li>动物是哺乳动物类的父类</li>
@@ -336,15 +334,13 @@ var _hmt = _hmt || [];
 <li>哺乳动物IS-A动物</li>
 <li>爬行动物IS-A的动物</li>
 <li>狗IS-A哺乳动物</li>
-<li><p>因此:狗IS-A动物<br>使用extends关键字的子类就可以除父类的私有属性，它继承父类的所有属</p>
-<ul>
-<li>instanceof 关键字:<br>用instanceof检测子类是否与父类相关</li>
-<li>HAS-A关系:<br>這些關係主要是基於使用。這就決定了某一類是否 HAS-A 某一個東西。這種關係有助於​​減少重複代碼，以及錯誤。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">   public class Vehicle&#123;&#125;</div><div class="line">public class Speed&#123;&#125;</div><div class="line">public class Van extends Vehicle&#123;</div><div class="line">  private Speed sp;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
+<li>因此:狗IS-A动物<br>使用extends关键字的子类就可以除父类的私有属性，它继承父类的所有属</li>
 </ul>
-<p>这表明，Van类 HAS-A<br>Speed类，通过让飞车一个单独的类，我们不必把属于加速Van类中的全部代码。这使他可以重复使用Speed类在多个应用程序。</p>
 </li>
-</ul>
+<li>instanceof 关键字:<br>  用instanceof检测子类是否与父类相关</li>
+<li><p>HAS-A关系:<br> 這些關係主要是基於使用。這就決定了某一類是否 HAS-A 某一個東西。這種關係有助於​​減少重複代碼，以及錯誤。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">   public class Vehicle&#123;&#125;</div><div class="line">public class Speed&#123;&#125;</div><div class="line">public class Van extends Vehicle&#123;</div><div class="line">  private Speed sp;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>  这表明，Van类 HAS-A<br>  Speed类，通过让飞车一个单独的类，我们不必把属于加速Van类中的全部代码。这使他可以重复使用Speed类在多个应用程序。</p>
 <ul>
 <li><p>覆盖与重载<br>重载好处是：定义一个行为是特定于该子类的类型表示一个子类可以实现根据它要求一个父类的方法的能力</p>
 <ul>
@@ -466,18 +462,18 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2017/09/06/proJava/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/09/06/hexo安装/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          JavaPro
+          hexo install
         
       </div>
     </a>
   
   
-    <a href="/2017/01/07/sublimeText/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">sublimeText</div>
+    <a href="/2017/09/06/proJava/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaPro</div>
       <i class="icon-circle-right"></i>
     </a>
   
