@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-next use-motion theme-next-mala">
+<html class="theme-next  ">
 <head>
   
 
@@ -16,14 +16,10 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
 
 
 
-  <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
-
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
+<link rel="stylesheet" type="text/css" href="//main.css?v="/>
 
 
 
@@ -35,8 +31,6 @@
   <link rel="alternate" href="/atom.xml" title="Kayye" type="application/atom+xml" />
 
 
-
-  <link rel="shorticon icon" type="image/x-icon" href="/assets/img/avatar.png?v=0.4.5.1" />
 
 
 <meta name="description" content="网站怎样与用户进行交互？　　　答案是使用HTML表单(form)。表单是可以把浏览者输入的数据传送到服务器端，这样服务器端程序就可以处理表单传过来的数据。 　　　语法：               讲解：  1.：该标签是成对出现的，以开始，以结束。  2.action ：浏览者输入的数据被传送到的地方,比如一个PHP页面(save.php)。  3.数据传送的方式(get/post)   123">
@@ -55,8 +49,8 @@
 
 <script type="text/javascript" id="hexo.configuration">
   var CONFIG = {
-    scheme: 'Mala',
-    sidebar: 'post'
+    scheme: '',
+    sidebar: ''
   };
 </script>
 
@@ -105,45 +99,6 @@
   
 
   
-    <ul id="menu" class="menu ">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            <i class="menu-item-icon icon-next-home"></i> <br />
-            Startseite
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            <i class="menu-item-icon icon-next-categories"></i> <br />
-            Kategorien
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            <i class="menu-item-icon icon-next-archives"></i> <br />
-            Archiv
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            <i class="menu-item-icon icon-next-about"></i> <br />
-            Über
-          </a>
-        </li>
-      
-
-      
-      
-    </ul>
-  
 
   
 </nav>
@@ -177,7 +132,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          Veröffentlicht am
+          Posted on
           <time itemprop="dateCreated" datetime="2016-04-23T20:27:45+08:00" content="2016-04-23">
             2016-04-23
           </time>
@@ -185,7 +140,7 @@
 
         
           <span class="post-category" >
-            &nbsp; | &nbsp; in
+            &nbsp; | &nbsp; In
             
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                 <a href="/categories/HTML/" itemprop="url" rel="index">
@@ -345,129 +300,9 @@
 
     <div>
       
-        <style type="text/css">
-
-    .donate_bar {
-        text-align: center;
-        margin-top : 5%;
-    }
-
-    .donate_bar.hidden {
-        display:none;
-    }
-/*
-    .donate_bar a.btn_donate {
-        display: inline-block;
-        width: 82px;
-        height: 82px;
-        margin-left:auto;
-        margin-right:auto;
-
-        background: url("http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif") no-repeat;
-        _background: url("http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif") no-repeat; 
-
-        -webkit-transition: background 0s;
-        -moz-transition: background 0s;
-        -o-transition: background 0s;
-        -ms-transition: background 0s;
-        transition: background 0s;
-    }
-*/
-    .donate_bar a.btn_donate:hover { 
-        // background-position: 0px -82px;
-        color: #87daff;
-    }
-
-    .donate_bar .donate_txt {
-        display: block;
-        color: #9d9d9d;
-        font: 14px/2 "Microsoft Yahei";
-    }
-
-    .bold { 
-        font-weight: bold; 
-    }
-
-    .post-donate a {
-        border-bottom: 0px;
-    }
-
-    #donate_guide table {
-        border: none;
-    }
-
-    #donate_guide td {
-        border-bottom: none;
-        border-right: none;
-        // background: #333333;
-        valign: top;
-    }
-
-</style>
-
-
-
-    
-
-    <div class ="post-donate">
-        <div id="donate_board" class="donate_bar center">
-              <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏">赏</a>
-              <span id="donate_txt" class="donate_txt">
-                   
-                        仅仅是一个功能
-                   
-              </span>
-            <br>
-        </div>  
-  
-        <div id="donate_guide" class="donate_bar center hidden">
-            <!--
-              
-
-            
-            -->
-            <table>
-                <tr>
-                    <td>
-                         
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            </table>
-
-        </div>
-
-        <script type="text/javascript">
-            document.getElementById('btn_donate').onclick = function() {
-                $('#donate_board').addClass('hidden');
-                // $('#donate_guide').removeClass('hidden');
-                $('#donate_guide').show(2000);
-            }
-
-        </script>
-    </div>
-
-    
-
-
-      
     </div>
 
     <div class="post-spread">
-      
-        <div class="bdsharebuttonbox">
-	<a href="#" class="bds_more" data-cmd="more"></a>
-	<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-	<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-	<a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-	<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-	<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
-	<a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
-</div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-
       
     </div>
   </div>
@@ -499,39 +334,39 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+            Table Of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
 
       <section class="site-overview">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/default_avatar.jpg" alt="Kayye" itemprop="image"/>
+          <img class="site-author-image" src="//default_avatar.jpg" alt="Kayye" itemprop="image"/>
           <p class="site-author-name" itemprop="name">Kayye</p>
         </div>
         <p class="site-description motion-element" itemprop="description"></p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/archives">
+            <a href="/">
               <span class="site-state-item-count">16</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            <a href="/categories">
+            
               <span class="site-state-item-count">10</span>
-              <span class="site-state-item-name">Kategorien</span>
-              </a>
+              <span class="site-state-item-name">categories</span>
+              
           </div>
 
           <div class="site-state-item site-state-tags">
             
               <span class="site-state-item-count">7</span>
-              <span class="site-state-item-name">Tags</span>
+              <span class="site-state-item-name">tags</span>
               
           </div>
 
@@ -547,20 +382,6 @@
         
 
         <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/kayye" target="_blank">GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/kayhe" target="_blank">微博</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/kayyrq/" target="_blank">知乎</a>
-              </span>
-            
           
         </div>
 
@@ -579,7 +400,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#网站怎样与用户进行交互？"><span class="nav-number">1.</span> <span class="nav-text">网站怎样与用户进行交互？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本-密码-输入框-标签"><span class="nav-number">2.</span> <span class="nav-text">文本(密码)输入框,标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单选框，复选框-标签"><span class="nav-number">3.</span> <span class="nav-text">单选框，复选框,标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#提交按钮，标签"><span class="nav-number">4.</span> <span class="nav-text">提交按钮，标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重置按钮-标签"><span class="nav-number">5.</span> <span class="nav-text">重置按钮,标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本域，标签"><span class="nav-number">6.</span> <span class="nav-text">文本域，标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下拉列表框，标签"><span class="nav-number">7.</span> <span class="nav-text">下拉列表框，标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#from表单中的标签"><span class="nav-number">8.</span> <span class="nav-text">from表单中的标签</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#网站怎样与用户进行交互？"><span class="nav-text">网站怎样与用户进行交互？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本-密码-输入框-标签"><span class="nav-text">文本(密码)输入框,标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单选框，复选框-标签"><span class="nav-text">单选框，复选框,标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#提交按钮，标签"><span class="nav-text">提交按钮，标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重置按钮-标签"><span class="nav-text">重置按钮,标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本域，标签"><span class="nav-text">文本域，标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下拉列表框，标签"><span class="nav-text">下拉列表框，标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#from表单中的标签"><span class="nav-text">from表单中的标签</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
@@ -610,7 +431,7 @@
 </div>
 
 <div class="theme-info">
-  Theme by <a class="theme-link" href="http://blog.idhyt.com">idhyt</a>.<a class="theme-link" href="https://github.com/idhyt/hexo-theme-next/tree/magiclamp">Mala</a>
+  Theme by <a class="theme-link" href="http://blog.idhyt.com">idhyt</a>.<a class="theme-link" href="https://github.com/idhyt/hexo-theme-next/tree/magiclamp"></a>
 </div>
 
 <!-- busuanzi -->
@@ -623,7 +444,7 @@
     <div class="back-to-top"></div>
   </div>
 
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+  <script type="text/javascript" src="//jquery/index.js?v=2.1.3"></script>
 
   
   
@@ -636,27 +457,21 @@
 
   
   
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
 
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
+  <script type="text/javascript" src="//helpers.js?v="></script>
   
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
+  <script type="text/javascript" src="//motion_fallback.js?v=" id="motion.fallback"></script>
 
 
 
 
-  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="//nav-toggle.js?v="></script>
+  <script type="text/javascript" src="//fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
   
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.1" id="bootstrap.scrollspy.custom"></script>
+<script type="text/javascript" src="//bootstrap.scrollspy.js?v=" id="bootstrap.scrollspy.custom"></script>
 
 
 <script type="text/javascript" id="sidebar.toc.highlight">
@@ -832,14 +647,15 @@
   
 
   
-  <script type="text/javascript" src="/js/lazyload.js"></script>
+  <script type="text/javascript" src="//lazyload.js"></script>
   <script type="text/javascript">
     $(function () {
       $("#posts").find('img').lazyload({
-        placeholder: "/images/loading.gif",
+        placeholder: "//loading.gif",
         effect: "fadeIn"
       });
     });
   </script>
+  
 </body>
 </html>
