@@ -1,11 +1,23 @@
-<!doctype html>
-<html class="theme-next  ">
-<head>
+<!DOCTYPE html>
+
+
+
   
 
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -19,14 +31,52 @@
 
 
 
-<link rel="stylesheet" type="text/css" href="//main.css?v="/>
 
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
 
 
   <link rel="alternate" href="/atom.xml" title="Kayye" type="application/atom+xml" />
+
+
 
 
 
@@ -40,146 +90,279 @@
 <meta name="twitter:title" content="Kayye">
 
 
-<script type="text/javascript" id="hexo.configuration">
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: '',
-    sidebar: ''
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
   };
 </script>
 
-  <title> Kayye </title>
-</head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
+  <link rel="canonical" href="http://kayye.github.io/"/>
+
+
+
+
+
+  <title>Kayye</title>
   
 
 
 
-  <div class="container one-column 
-   page-home 
-">
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><h1 class="site-meta">
-  <span class="logo-line-before"><i></i></span>
-  <a href="/" class="brand" rel="start">
-      <span class="logo">
-        <i class="icon-next-logo"></i>
-      </span>
-      <span class="site-title">我又我自由自在，长流远方</span>
-  </a>
-  <span class="logo-line-after"><i></i></span>
-</h1>
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Kayye</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">我又我自由自在，长流远方</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
   
 
   
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Kategorien
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
 
   
 </nav>
 
+
+
  </div>
     </header>
 
-    
-
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content"> 
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
   <section id="posts" class="posts-expand">
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2018/01/08/java学习步骤/" itemprop="url">
-                Java学习步骤
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2018-01-08T22:29:41+08:00" content="2018-01-08">
-            2018-01-08
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://kayye.github.io/2018/03/15/javaJDBC驱动/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kayye">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kayye">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; In
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/15/javaJDBC驱动/" itemprop="url">Java JDBC驱动</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/java/" itemprop="url" rel="index">
-                  <span itemprop="name">java</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-15T20:29:41+08:00">
+                2018-03-15
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <p>1.MySQL<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">String Driver=&quot;com.mysql.jdbc.Driver&quot;</div></pre></td></tr></table></figure></p>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            零基础学习java第一部分  一、java基础首先去找一个java的基础教程学习java基础的时候，应该尽量多动手，很多时候，你想当然的事情，等你写出来运行一下，你就会发现不是这么回事。学完以上内容以后，你应该对java有一个基本的了解，你可以用java语言写出一些简单的程序，并且你用的是最简单的编
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2018/01/08/java学习步骤/" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -189,82 +372,156 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2017/12/25/Java读取txt文件和写入txt文件/" itemprop="url">
-                Java读取txt文件和写入txt文件
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2017-12-25T15:29:41+08:00" content="2017-12-25">
-            2017-12-25
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://kayye.github.io/2018/01/08/java学习步骤/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kayye">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kayye">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; In
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/08/java学习步骤/" itemprop="url">Java学习步骤</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/java/" itemprop="url" rel="index">
-                  <span itemprop="name">java</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-08T22:29:41+08:00">
+                2018-01-08
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <p>零基础学习java<br>第一部分<br>  一、java基础首先去找一个java的基础教程学习java基础的时候，应该尽量多动手，很多时候，你想当然的事情，等你写出来运行一下，你就会发现不是这么回事。学完以上内容以后，你应该对java有一个基本的了解，你可以用java语言写出一些简单的程序，并且你用的是最简单的编辑器，比如记事本。这个时候，不要急于进入下一个部分，留下几天好好写一些程序，尽可能熟悉这些基础内容。<br>  二、Web开发等你写上几天程序以后，你往往会比较迷茫，因为你写的东西似乎看起来毫无用处，比如实现一个简单的计算期，读取一个文件等。这个时候你就应该去学着写一些让你觉得有意思的东西，所以你应该学习更多的知识。这些内容主要是Web开发相关的内容，包括HTML/CSS/JS（前端页面）、Servlet/JSP（J2EE）以及Mysql（数据库）相关的知识。它们的学习顺序应该从前到后，因此最先学习的应该是HTML/CSS/JS（前端页面），这部分内容你可以去上面的runoob网站上找。</p>
+<p>  你可以试着自己写一些页面，当然，你可以尽你最大的努力让它变得最漂亮。这部分内容对于后端java来说，理论上不是特别重要，但至少达到可以自己写出一些简单页面的水平。接下来，你需要学习的是Servlet/JSP(J2EE)部分，这部分是java后端开发必须非常精通的部分，因此这部分是这三部分中最需要花精力的，而且这个时候，你要学会使用开发工具，而不能在使用记事本了，可以选择eclipse。当你下载安装好ecliose以后。请视频中的教程一步一步去学习，一定要多动手。关于Servlet/jsp部分视频的选择，业界比较认可马士兵的视频。</p>
+<p>  三、开发框架  当你学会以上内容以后，这个时候你还不足以参加工作，你还需要继续深造。公司里为了提高开发效率，会使用一些java Web的框架，因此你还需要学习一些开发框架。目前比较主流的是SSM框架，即spring、springMVC、mybatis。你需要学会这三哥框架的搭建，并用他们作出一个简单的增删改查的WEB项目。</p>
+<p>  快速利用它们三个搭建出一个WEB框架，你可以记录下你第一次搭建的过程。你在搭建ssm的过程中，可能会经常接触到一个叫maven的工具。这个工具是你以后工作当中几乎必须使用的工具，所以你在搭建ssm的过程中，也可以顺便了解一下maven的只是。在你目前这个阶段，你只需要在网络上了解一下maven基本的使用方法即可，一些高端的用法随这工作经验的增加，会逐渐接触到</p>
+<p>  四、当找工作你完全开发框架的学习以后，你就该找工作了，在找工作的同时，你不应该停下你的学习，准确的说，是你在以后都不能停下学习。上面这些内容你只是囫囵吞枣的学会了使用，你可以逐步尝试着去了解更多的东西，网络是你最重要的老师。</p>
+<p>第二部分<br>  对于参加工作一年以内的同学。恭喜你，这个时候，你已经拥有了一份java的工作。这个阶段是你成长极快的阶段，而且你可能会经常加班。但是夹板不代表你就可以松懈了，永远记得我说的那句话，从你入行那一刻起，你就要不停的学习。在这一年里，你至少需要看完《java编程思想》这本书。这本书的内容是帮助你对于java有一个更加深入的了解，是java基础的升级版。一年内看完并且充分吸收，而不是读一遍就完事了，因此有些内容可能不止看一遍。总而言之，这个阶段的核心学习思想就是，在工作中实践，并且更加深入的了解java基础</p>
+<p>第三部分<br>  对于参加工作一到两年的同学。这部分时段的已经对java有了一个更加深入的了解。但是对于面向对象的体会可能还不够深刻，变成的时候还停留在完成功能的层次，很少会去考虑设计的问题。于是这个时候，设计模式就来了。《大话设计模式》这本书，写有关设计模式的博客。<br>  这一年必须对于设计模式了如指掌，《大话设计模式》可以作为你的开端。此外，设计模式并不是你这一年唯一的任务，你还需要看一些关于代码编写优化的书。比如《重构改善既有代码的设计》，《effective java》。总而言之，这个阶段，你的核心任务就是提高你的代码能力，要能写出一手优雅的代码。</p>
+<p>第四部分<br>   对于参加工作2到3年的同学，这个阶段有一本书必须要看，它叫做《深入理解java虚拟机》，这本书绝对是java开发者最重要的书，没有之一。在我眼里，这本书高于《java编程思想》。这本书的内容是帮助你全面的了解java虚拟机，这个阶段，你一定已经知道java是运行JVM上的。所以，对于JVM，你没有任何理由不了解它。<br>   另外，在过去两年的工作当中，你肯定或多或少接触过并发，这个时候，你应该更加深入的了解并发相关的知识，而这部分内容，我比较推荐《java并发编程实战》这本书。只要你把这本书啃下来了，并发的部分基本已经了解了十之六七。与此同时，这个阶段你要做的事情还远不止如此。这个时候，你应该对于你所使用的狂街应该有了更深入的了解，对于java的类库也有了更深入的了解<br>   因此，你需要去看一些JDK的类的源码，也包括你所使用的框架源码。这些源码能看懂的前提是，你必须对设计模式非常了解。否则的话，你看源码的过程中，永远会有这样那样的一蚊。这段代码为什麽要这么写？为什麽要定义这个接口，它看起来好像很多余？因此也可以看出，这些学习的过程是环环相扣的，如果你任何一个阶段拉下来了，那么你就真的跟不上了。<br>   这个阶段要深入了解java底层和java类库（比如并发的那本书就是java并发包java.concurrent的内容），也就是说jvm和jdk的相关内容。而且还要更深入的去了解你所使用的框架，方式比较推荐看源码或者去看官方文档。另外，还有一种学习的方式，在两年这个阶段，也应该启用了，那就是造轮子。不要听信那套“不要重复造轮子”的论调，那是公司为了节省时间成本编造出来的。重复造轮子或许对别人没有价值，因为你造的轮子可能早就有了，而且一般情况下你造出的轮子还没有现存的好，但是对别人没有价值，不代表对你自己没有价值。一个造轮子的过程，是一个从无到有的过程。这个过程可以对你进行系统的锻炼，它不仅考察你的编码能力，还考察你的框架设计能力，你需要让你的轮子拥有足够好的扩展性。健壮性。而且造轮子的过程中，你会遇到各种各样的难题，这些难题往往又是你学习的契机。当你把轮子造好的时候，你一定会发现，其实你自己收获了很多。所以，这个阶段除了上面提到的了解JVM.JDK和框架源码以外，请根据别人优秀的源码，去造一个任何你能够想象出来的轮子。</p>
+<p>第五部分<br>   参加工作3到4年的同学这个阶段提升已经很难了。而且这个阶段学习往往会比较多样化，因为在前3年的过程中，你肯定或多或少接触过一些其他的技术，比如大数据、分布式缓存、分布式消息服务、分布式计算、软负载均衡等等。这些技术，你能精通任何一项。都将是你未来面试时的醉倒有时，因此如果你对某一项技术感兴趣的话，这个时候可以深入去研究一下。这项技术不一定是你工作所用到的，但一定是相关的。研究一门新技术时，切忌朝三暮四。有的今天去整整大数据，搞搞Hadoop、hbase一类的东西。过不了一段时间，就觉得没意思，又去研究分布式缓存，比如redis。然后又过不了一段时间，又去研究分布式计算，比如整整Mapreduce或者storm。结果到最后什么都不精通</p>
+<p>   一定要记住作为一个程序员，平日所接触的技术可能会很多，但是想要让一门技术成为你的优势，那么一定是你对这门技术的了解强过绝大多数人。因此这个阶段，你就不能再简单的去学习前3年的内容了，虽然前面的学习如果还不够深入的话依旧要继续，但这个时候你应该更多的考虑建立你的优势，也可以称为差异性，差异性不难理解，就是让自己成为与众不同。你前面三年的学习足够你成为一名基本合格的java开发者，但你离成为一名优秀的java开发者还有很大的距离</p>
+<p>   所谓优秀，即能别人所不能。而你前3年所学习的内容，是很多做过几年的java开发都能够掌握的。那么为了让自己有差异性，你就需要另辟蹊径，找一个方向深入研究下去，以期在将来，你能够成为这个领域的专家，比如分布式计算领域的专家，大数据领域的专家，并发领域的专家等等，此外，你除了建立你的差异性之外。还要去拟补你基础上的不足，直到现在，都没有提及基础知识，原因是基础是很枯燥无味的，学得太早不仅容易懵逼，而且懵逼的同时还容易产生心理阴影，以至于以后再不想去研究这些基础。但基础又是你深入研究一些领域时所必须掌握的，比如你去研究分布式计算，你不懂算法玩个毛毛，比如去做分布式缓存，对计算机系统内存不了解，如何做缓存。</p>
+<p>   如果你的基础本来就非常强，那么恭喜你，相信你在之前的工作中已经充分体会到了这些基础对你的帮助。但大部分人基础还是很薄弱的，很多人也不敢说自己当初的基础学得多么强大，不如算法、计算机系统原理、编译原理这些，但每个人的时间都是有限的，而且这些基础的书籍每一本读下来，没个一年半载还真拿不下来，因此要有所抉择。虽然艺多不压身，但问题是艺多是有代价的，是需要你付出时间和精力的，而我个人更赞成在同等代价的情况下获取最大的收获</p>
+<p>   基础书籍有三本，分别是《深入了解计算机系统》，《tcp/ip详解卷一、二、三》，《数据结构与算法》。其中TCP/IP有三本书，但看左一本大书，这分别适合三种人，《深入理解计算机系统》比较适合一直从事java web开发和app后端开发工作的人。《tcp/ip详解》比较适合网络编程的人群，比如你使用netty去开发的话，那么就要对tcp/ip有更深入的了解。而《数据结构与算法》比较适合做计算研究工作的人，比如分布式计算。这里所说的适合并不是其他两本对你就没有用，比如你做java web和app后端开发，《tccp/ip详解》这本书对你的作用也是很大的。这里只是分出个主次而已，你钥匙时间足够的话，能把三本都精读当然最好。</p>
+<p>   但时间有限的话，那么就先挑对你帮助最大的书去度。理论上来讲，这一年你能把这三本中一本精读下来，就已经非常厉害了。有了基础，有了前面的工作经验，你就可以去开拓属于你的领域了。在这一年里，与i定要规划好自己的领域，建立好自己的优势，制造出差异性。如果你对自己的领域不够i清晰的话，随着你工作的时间日益增多，你接触的技术会越来越多，这个时候，你很容易被淹死在技术的海洋里，看似接触的技术越来越多，会用的也越来也多，但你毫无优势。</p>
+<p>第六部分<br>   参加工作4到5年的同学经过前面一年的历练，相信你在自己所钻研的领域已经有了自己一定的简介，这个时候，技术上你应该已经遇到了瓶颈。这个时候不要急着提高自己的技术，已经是时候提高自己的影响力，可以尝试去一些志明的公司提高你的背景，你可以发表一些文章去影响更多的人，当然，你也可以去github创建一个属于你的开源项目，去打造自己的产品</p>
+<p>   这次的开源项目不同于之前的造轮子，这个时候是真的要去尽量尝试造出来真正对被人有价值的轮子。技术学到了这个阶段，很容易遇到瓶颈，而且往往达到一定程度后，你再深入下去的收效真的微乎其微，除非你是专门搞学术研究的。然而很可惜，大部分程序员做不到这一步，那是科学家做的事情。这个时候提高影响力不仅仅因为技术上容易遇到瓶颈，更多的是影响力可以给你创造更多的机会。程序猿有时候也是，一个好的项目就可以成就一群程序员，比如国内几个脍炙人口的项目，像淘宝、支付宝、qq、百度、微信、等等。这每一个项目，都成就了一批程序员。这里面任何一个项目，如果你是他的核心开发，光是这样一个踢踢了，就已经是你非常大的有时，更何况还不止如此，titile说到底是个名头，更重要的是，这种项目在做的时候iou，对你的历练一定也是非常给力的。</p>
+<p>   而你如果想要参与这样的项目，除了靠运气之外，影响力也是非常仲要的一个手段。比如你在分布式计算领域有一定的影响力，那么如果有什么好的关于分布式计算的项目，对方就很可能会邀请你。就算人家不邀请你。你主动去面试的时候，对方如果知道你这个领域的影响力。也肯定会起到很大的作用，而这个作用，甚至可能会超过你现在的技术能力。所以，在这个阶段，你最大的任务提高自己的因相关i昂立，为自己的未来十年工作生涯做准备。如果你能够靠你的影响力和以前积累的技术，参与到一个伟大的项目中，那么你后面的五年也有着落了。</p>
+<p>   大家要有自己的判断力，去决定到底该如何度过这一年，所说的是社招面试准备，一个是java生涯的学习，每个人吸收知识的时候，都要抽取精华，去其糟粕。所说的可能是对的，可能有些是错的，有些是适合你的，有些是不太适合你的，你要自己能够判断。其实你在生活和工作当中也是一样，你身边的人形形色色，有的人你喜欢，有的人你很讨厌。但其实你喜欢的人也有缺点，你讨厌的人也有优点，你要学会从你讨厌的人身上学会他的有点，千万不要一棒子打死，这指挥让你失去很多学习成长的机会。</p>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            写Java程序时经常碰到要读如txt或写入txt文件的情况1234567891011121314151617181920212223242526272829303132333435363738package edu.thu.keyword.test;    import java.io.File; 
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/12/25/Java读取txt文件和写入txt文件/" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -274,82 +531,139 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2017/12/21/python/" itemprop="url">
-                AboutPython
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2017-12-21T15:29:41+08:00" content="2017-12-21">
-            2017-12-21
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://kayye.github.io/2017/12/25/Java读取txt文件和写入txt文件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kayye">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kayye">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; In
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/25/Java读取txt文件和写入txt文件/" itemprop="url">Java读取txt文件和写入txt文件</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
             
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/Python/" itemprop="url" rel="index">
-                  <span itemprop="name">Python</span>
-                </a>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
               </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-25T15:29:41+08:00">
+                2017-12-25
+              </time>
+            
 
-              
-              
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <p>写Java程序时经常碰到要读如txt或写入txt文件的情况<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">package edu.thu.keyword.test;  </div><div class="line">  </div><div class="line">import java.io.File;  </div><div class="line">import java.io.InputStreamReader;  </div><div class="line">import java.io.BufferedReader;  </div><div class="line">import java.io.BufferedWriter;  </div><div class="line">import java.io.FileInputStream;  </div><div class="line">import java.io.FileWriter;  </div><div class="line">  </div><div class="line">public class cin_txt &#123;  </div><div class="line">    static void main(String args[]) &#123;  </div><div class="line">        try &#123; // 防止文件建立或读取失败，用catch捕捉错误并打印，也可以throw  </div><div class="line">  </div><div class="line">            /* 读入TXT文件 */  </div><div class="line">            String pathname = &quot;D:\\twitter\\13_9_6\\dataset\\en\\input.txt&quot;; // 绝对路径或相对路径都可以，这里是绝对路径，写入文件时演示相对路径  </div><div class="line">            File filename = new File(pathname); // 要读取以上路径的input。txt文件  </div><div class="line">            InputStreamReader reader = new InputStreamReader(  </div><div class="line">                    new FileInputStream(filename)); // 建立一个输入流对象reader  </div><div class="line">            BufferedReader br = new BufferedReader(reader); // 建立一个对象，它把文件内容转成计算机能读懂的语言  </div><div class="line">            String line = &quot;&quot;;  </div><div class="line">            line = br.readLine();  </div><div class="line">            while (line != null) &#123;  </div><div class="line">                line = br.readLine(); // 一次读入一行数据  </div><div class="line">            &#125;  </div><div class="line">  </div><div class="line">            /* 写入Txt文件 */  </div><div class="line">            File writename = new File(&quot;.\\result\\en\\output.txt&quot;); // 相对路径，如果没有则要建立一个新的output。txt文件  </div><div class="line">            writename.createNewFile(); // 创建新文件  </div><div class="line">            BufferedWriter out = new BufferedWriter(new FileWriter(writename));  </div><div class="line">            out.write(&quot;我会写入文件啦\r\n&quot;); // \r\n即为换行  </div><div class="line">            out.flush(); // 把缓存区内容压入文件  </div><div class="line">            out.close(); // 最后记得关闭文件  </div><div class="line">  </div><div class="line">        &#125; catch (Exception e) &#123;  </div><div class="line">            e.printStackTrace();  </div><div class="line">        &#125;  </div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            
-            
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/12/21/python/" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -359,61 +673,266 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2017/10/11/hexoYilia相册/" itemprop="url">
-                hexo yilia添加相册功能
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2017-10-11T11:40:41+08:00" content="2017-10-11">
-            2017-10-11
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://kayye.github.io/2017/12/21/python/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kayye">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kayye">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; In
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/hexo/" itemprop="url" rel="index">
-                  <span itemprop="name">hexo</span>
-                </a>
-              </span>
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/21/python/" itemprop="url">AboutPython</a></h2>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
               
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-21T15:29:41+08:00">
+                2017-12-21
+              </time>
+            
+
+            
 
             
           </span>
-        
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-      </div>
-    </header>
+            <ul>
+<li><p>数据类型</p>
+<ul>
+<li><p>字符串<br>字符窜是用单引号’’或双引号””，如’abc’，”xyz”等，如果’’本身也是个字符，那就用””括起来，比如”I’m OK”，<br>若字符串内部既包括’’也包含””，可以用转义字符\来标识</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&apos;I\&apos;m \&quot;OK\&quot;!&apos;</div></pre></td></tr></table></figure>
+<p>转义字符\可以转义很多字符，比如\n表示换行，\t表示制表符，字符\本身也要转义，所以\表示的字符就是\<br>如果字符串里面有很多字符都需要转义，就需要加很多\，为了简化，Python还允许用r’’表示’’内部的字符串默认不转义</p>
+</li>
+</ul>
+</li>
+<li>字符窜</li>
+<li></li>
+</ul>
 
-    <div class="post-body">
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://kayye.github.io/2017/10/11/hexoYilia相册/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kayye">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kayye">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/11/hexoYilia相册/" itemprop="url">hexo yilia添加相册功能</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-11T11:40:41+08:00">
+                2017-10-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -428,16 +947,29 @@
 </li>
 </ul>
 <p><img src="/assets/blogImg/hexoyilia添加相册/目录.png" alt=""><br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/10/11/hexoYilia相册/" rel="contents">
-              Read more &raquo;
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/10/11/hexoYilia相册/#more" rel="contents">
+              Weiterlesen &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -447,61 +979,113 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2017/09/12/github/" itemprop="url">
-                github
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2017-09-12T15:29:41+08:00" content="2017-09-12">
-            2017-09-12
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://kayye.github.io/2017/09/12/github/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kayye">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kayye">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; In
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/github/" itemprop="url" rel="index">
-                  <span itemprop="name">github</span>
-                </a>
-              </span>
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/12/github/" itemprop="url">github</a></h2>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
               
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-12T15:29:41+08:00">
+                2017-09-12
+              </time>
+            
+
+            
 
             
           </span>
-        
 
-        
           
-        
-      </div>
-    </header>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/github/" itemprop="url" rel="index">
+                    <span itemprop="name">github</span>
+                  </a>
+                </span>
 
-    <div class="post-body">
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -512,16 +1096,29 @@
 <li>github分支问题 </li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">创好新的分支</div><div class="line">git banch &lt;分支名&gt; #创建分支</div><div class="line">git checkout       #切换分支</div><div class="line">git checkout -b    #切换+创建分支</div><div class="line"></div><div class="line">创建好后切换到新分支，先进行push</div><div class="line">git push origin &lt;新分支名&gt;</div></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/09/12/github/" rel="contents">
-              Read more &raquo;
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/12/github/#more" rel="contents">
+              Weiterlesen &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -531,61 +1128,113 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2017/09/06/hexo安装/" itemprop="url">
-                hexo install
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2017-09-06T22:29:41+08:00" content="2017-09-06">
-            2017-09-06
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://kayye.github.io/2017/09/06/hexo安装/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kayye">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kayye">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; In
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/hexo/" itemprop="url" rel="index">
-                  <span itemprop="name">hexo</span>
-                </a>
-              </span>
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/06/hexo安装/" itemprop="url">hexo install</a></h2>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
               
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-06T22:29:41+08:00">
+                2017-09-06
+              </time>
+            
+
+            
 
             
           </span>
-        
 
-        
           
-        
-      </div>
-    </header>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
 
-    <div class="post-body">
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -593,16 +1242,29 @@
       
         
           <h1 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h1><p>·安装node.js<br>进入官网(<a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a>)<br>下载安装包，直接点击安装就可以了<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/09/06/hexo安装/" rel="contents">
-              Read more &raquo;
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/06/hexo安装/#more" rel="contents">
+              Weiterlesen &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -612,61 +1274,113 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2017/09/06/AboutJava/" itemprop="url">
-                AboutJava
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2017-09-06T15:29:41+08:00" content="2017-09-06">
-            2017-09-06
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://kayye.github.io/2017/09/06/AboutJava/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kayye">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kayye">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; In
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/Java/" itemprop="url" rel="index">
-                  <span itemprop="name">Java</span>
-                </a>
-              </span>
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/06/AboutJava/" itemprop="url">AboutJava</a></h2>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
               
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-06T15:29:41+08:00">
+                2017-09-06
+              </time>
+            
+
+            
 
             
           </span>
-        
 
-        
           
-        
-      </div>
-    </header>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
 
-    <div class="post-body">
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -680,16 +1394,29 @@
 <li>主体<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">switch(表达式)&#123;</div><div class="line">  case 常量值 1：</div><div class="line">        代码块1;</div><div class="line">        break;</div><div class="line">  case 常量值2:</div><div class="line">        代码块2;</div><div class="line">        break;</div><div class="line">  ...</div><div class="line">  default:</div><div class="line">        当以上常量值均不是时，执行本代码（可有可无）</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/09/06/AboutJava/" rel="contents">
-              Read more &raquo;
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/06/AboutJava/#more" rel="contents">
+              Weiterlesen &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -699,61 +1426,113 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2017/09/06/proJava/" itemprop="url">
-                JavaPro
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2017-09-06T15:29:41+08:00" content="2017-09-06">
-            2017-09-06
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://kayye.github.io/2017/09/06/proJava/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kayye">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kayye">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; In
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/Java/" itemprop="url" rel="index">
-                  <span itemprop="name">Java</span>
-                </a>
-              </span>
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/06/proJava/" itemprop="url">JavaPro</a></h2>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
               
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-06T15:29:41+08:00">
+                2017-09-06
+              </time>
+            
+
+            
 
             
           </span>
-        
 
-        
           
-        
-      </div>
-    </header>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
 
-    <div class="post-body">
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -761,16 +1540,29 @@
       
         
           <p>1、判断一个数（小于10位）的位数。<br>输入999，则输出 “它是个3位的数！<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">    </div><div class="line">public class HelloWorld&#123;</div><div class="line">    public static void main(String[] args)&#123;</div><div class="line">        int num = 999;</div><div class="line">        int count = 0;</div><div class="line">        if(num&gt;=0&amp;&amp;num&lt;=999999999)&#123;</div><div class="line">            while(num&gt;=1)&#123;</div><div class="line">                count++;</div><div class="line">                num/=10;</div><div class="line">       &#125;</div><div class="line">            System.out.println(&quot;它是个&quot;+count+&quot;位的数！&quot;);</div><div class="line">        &#125;</div><div class="line">        else&#123;</div><div class="line">            System.out.println(&quot;输入有误&quot;);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/09/06/proJava/" rel="contents">
-              Read more &raquo;
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/06/proJava/#more" rel="contents">
+              Weiterlesen &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -780,61 +1572,113 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2017/01/07/sublimeText/" itemprop="url">
-                sublimeText
-              </a>
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2017-01-07T11:28:41+08:00" content="2017-01-07">
-            2017-01-07
-          </time>
-        </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://kayye.github.io/2017/01/07/sublimeText/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kayye">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kayye">
+    </span>
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category" >
-            &nbsp; | &nbsp; In
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/sublimeText/" itemprop="url" rel="index">
-                  <span itemprop="name">sublimeText</span>
-                </a>
-              </span>
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/01/07/sublimeText/" itemprop="url">sublimeText</a></h2>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
               
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-07T11:28:41+08:00">
+                2017-01-07
+              </time>
+            
+
+            
 
             
           </span>
-        
 
-        
           
-        
-      </div>
-    </header>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/sublimeText/" itemprop="url" rel="index">
+                    <span itemprop="name">sublimeText</span>
+                  </a>
+                </span>
 
-    <div class="post-body">
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -843,98 +1687,29 @@
         
           <h1 id="sublime-text-3快捷键与使用技巧介绍"><a href="#sublime-text-3快捷键与使用技巧介绍" class="headerlink" title="sublime text 3快捷键与使用技巧介绍"></a>sublime text 3快捷键与使用技巧介绍</h1><h1 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h1><p>强大的快捷键，提高你的编码效率。<br>常用快捷键</p>
 <p>CTRL+N：新建文件<br>CTRL+w：关闭文件<br>CTRL+O：打开文件<br>CTRL+Z：撤销<br>CTRL+Y：撤销还原<br>CTRL+F：查找<br>CTRL+H：替换<br>Esc：小工具窗口隐藏<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/01/07/sublimeText/" rel="contents">
-              Read more &raquo;
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/01/07/sublimeText/#more" rel="contents">
+              Weiterlesen &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
+    
+    
+    
 
     
-      
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2017/01/07/D170107/" itemprop="url">
-                D170107
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2017-01-07T10:40:14+08:00" content="2017-01-07">
-            2017-01-07
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; In
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/Diary/" itemprop="url" rel="index">
-                  <span itemprop="name">Diary</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>朦胧的一早</p>
-<p>一大早7.30的闹钟关了继续睡，一个反身却突然间醒来，然后级看到了靖儒，对喔忘记了昨晚答应了他要今天早上跑图书馆呢，
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/01/07/D170107/" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -944,6 +1719,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -952,17 +1731,20 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">&raquo;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
- </div>
 
+
+          </div>
+          
+
+
+          
+
+        </div>
         
-
-        
-      </div>
-
-      
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -973,61 +1755,103 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
 
-      <section class="site-overview">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="//default_avatar.jpg" alt="Kayye" itemprop="image"/>
-          <p class="site-author-name" itemprop="name">Kayye</p>
-        </div>
-        <p class="site-description motion-element" itemprop="description"></p>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/">
-              <span class="site-state-item-count">16</span>
-              <span class="site-state-item-name">posts</span>
-            </a>
-          </div>
+      
 
-          <div class="site-state-item site-state-categories">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <span class="site-state-item-count">10</span>
-              <span class="site-state-item-name">categories</span>
-              
+              <p class="site-author-name" itemprop="name">Kayye</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
-          <div class="site-state-item site-state-tags">
+          <nav class="site-state motion-element">
+
             
-              <span class="site-state-item-count">7</span>
-              <span class="site-state-item-name">tags</span>
+              <div class="site-state-item site-state-posts">
               
-          </div>
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">Artikel</span>
+                </a>
+              </div>
+            
 
-        </nav>
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">Kategorien</span>
+                </a>
+              </div>
+            
 
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="menu-item-icon icon-next-feed"></i>
-              RSS
-            </a>
-          </div>
-        
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">Tags</span>
+                </a>
+              </div>
+            
 
-        <div class="links-of-author motion-element">
+          </nav>
+
           
-        </div>
-
-        <div class="links-of-friendly motion-element">
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/kayye" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:kayyeq@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/kayhe" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-globe"></i>Weibo</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
       </section>
+
+      
 
       
 
@@ -1035,92 +1859,192 @@
   </aside>
 
 
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
-      <div class="footer-inner"> <div class="copyright" >
-  
-  &copy; &nbsp; 
-  <span itemprop="copyrightYear">2018
-  </span>
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="icon-next-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Kayye
-  </span>
+  <span class="author" itemprop="copyrightHolder">Kayye</span>
+
+  
 </div>
 
-<div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
-</div>
 
-<div class="theme-info">
-  Theme by <a class="theme-link" href="http://blog.idhyt.com">idhyt</a>.<a class="theme-link" href="https://github.com/idhyt/hexo-theme-next/tree/magiclamp"></a>
-</div>
-
-<!-- busuanzi -->
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
- </div>
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
   </div>
 
-  <script type="text/javascript" src="//jquery/index.js?v=2.1.3"></script>
-
-  
-  
-  
-    
-    
-
   
 
-
-  
-  
-
-  <script type="text/javascript" src="//helpers.js?v="></script>
-  
-
-  <script type="text/javascript" src="//motion_fallback.js?v=" id="motion.fallback"></script>
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
 
 
 
 
-  <script type="text/javascript" src="//nav-toggle.js?v="></script>
-  <script type="text/javascript" src="//fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+
+
+
 
   
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      if (CONFIG.sidebar === 'always') {
-        displaySidebar();
-      }
-      if (isMobile()) {
-        FastClick.attach(document.body);
-      }
-    });
-  </script>
 
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
   
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
   
-  <script type="text/javascript" src="//lazyload.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      $("#posts").find('img').lazyload({
-        placeholder: "//loading.gif",
-        effect: "fadeIn"
-      });
-    });
-  </script>
   
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
